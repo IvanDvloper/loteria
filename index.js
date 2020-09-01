@@ -33,6 +33,10 @@ index.get('/random/:numero', (req, res) => {
 index.get('/', (req, res) => {
     return res.status(200).send("Bienvenido");
 })
+index.post('/pushbody', (req, res) => {
+
+    return res.status(200).send("Estado:"+req.body.status);
+})
 index.get('/push', (req, res) => {
     let beamsClient = new PushNotifications({
         instanceId: '8db07c92-87d8-4bfc-a5e0-dc85589eb233',
