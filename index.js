@@ -46,8 +46,8 @@ index.get('/push', (req, res) => {
         },
         web: {
             notification: {
-                title: "Alerta",
-                body: "Hubo un numero mayor a 80!"
+                title: "Puerta",
+                body: "Abierto!"
             }
         },
         fcm: {
